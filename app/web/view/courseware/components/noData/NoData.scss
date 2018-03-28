@@ -1,0 +1,24 @@
+.noData {
+    height: 480px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(73, 116, 142, 0.15);
+    text-align: center;
+
+    :global {
+        img {
+            margin-top: 115px;
+        }
+
+        .noDataTitle {
+            margin-top: 25px;
+            font-size: 16px;
+            color: #999;
+        }
+
+        .noDataTip {
+            color: #cbcbcb;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    }
+}

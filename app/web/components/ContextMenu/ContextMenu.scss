@@ -1,0 +1,25 @@
+:global {
+    .cj-contextmenu {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+        z-index: 1070;
+        display: block;
+        background-color: #fff;
+
+        &-hidden {
+            display: none;
+        }
+
+        &-inner {
+            .ant-menu-item-divider {
+                background-color: #666;
+            }
+        }
+
+        .ant-menu-dark,
+        .ant-menu-dark .ant-menu-sub {
+            background: #fff;
+        }
+    }
+}

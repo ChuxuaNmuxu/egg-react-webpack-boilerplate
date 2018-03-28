@@ -1,0 +1,208 @@
+.schoolCourse {
+    :global {
+        .myCourseware {
+            padding-top: 140px;
+            padding-bottom: 100px;
+            background-color: #e9eef3;
+
+            .content {
+                padding-top: 25px;
+
+                .leftSelect {
+                    height: 480px;
+                    background-color: #fff;
+                }
+
+                .rightList {
+                    .searchContent {
+                        font-size: 16px;
+                        color: #666;
+                        margin-bottom: 10px;
+
+                        .searchKeyWord {
+                            color: #02abf0;
+                        }
+                    }
+
+                    .pagination {
+                        text-align: center;
+                        display: inline-flex;
+                        float: right;
+                        margin-top: 20px;
+
+                        .homepage {
+                            margin-right: 10px;
+                            width: 80px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            background-color: #fff;
+                            color: #666;
+                            font-size: 14px;
+                            cursor: pointer;
+                            border-radius: 4px;
+                        }
+
+                        .endpage {
+                            margin-left: 10px;
+                            width: 80px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            background-color: #fff;
+                            color: #666;
+                            font-size: 14px;
+                            cursor: pointer;
+                            border-radius: 4px;
+                        }
+
+                        .ant-pagination {
+                            .ant-pagination-item {
+                                width: 40px;
+                                height: 40px;
+                                line-height: 47px;
+                                text-align: center;
+                                background-color: #fff;
+                                border: hidden;
+
+                                a {
+                                    color: #666;
+                                }
+                            }
+
+                            .ant-pagination-item-active {
+                                background-color: #02abf0;
+
+                                a {
+                                    color: #fff;
+                                }
+                            }
+
+                            .ant-pagination-disabled a,
+                            .ant-pagination-disabled:hover a {
+                                color: #ccc !important;
+                            }
+                            //display: inline-block;
+                            .ant-pagination-prev {
+                                width: 80px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                background-color: #fff;
+                                color: #666;
+                                border: hidden;
+
+                                a {
+                                    display: inline-block;
+                                    margin-top: 7px;
+                                    color: #666;
+                                }
+
+                                a::after {
+                                    content: '上一页';
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .ant-pagination-next {
+                                width: 80px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                background-color: #fff;
+                                color: #666;
+                                border: hidden;
+
+                                a {
+                                    display: inline-block;
+                                    margin-top: 7px;
+                                    color: #666;
+                                }
+
+                                a::after {
+                                    content: '下一页';
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #preservationCourseModal {
+                .ant-modal-wrap {
+                    .preservationCourseModal {
+                        .ant-modal-content {
+                            .ant-modal-header {
+                                .ant-modal-title {
+                                    font-size: 16px;
+                                    color: #333;
+                                }
+                            }
+
+                            .ant-modal-footer {
+                                .newFolder {
+                                    float: left;
+                                    border: 1px solid #02abf0;
+                                    border-radius: 2px;
+                                    width: 122px;
+                                    height: 40px;
+                                    font-size: 16px;
+                                    color: #02abf0;
+                                }
+
+                                .preservationCourse {
+                                    background: #02abf0;
+                                    border-radius: 2px;
+                                    width: 122px;
+                                    height: 40px;
+                                    font-size: 16px;
+                                    color: #fff;
+                                }
+
+                                .preservationCancel {
+                                    border: 1px solid #02abf0;
+                                    border-radius: 2px;
+                                    width: 122px;
+                                    height: 40px;
+                                    font-size: 16px;
+                                    color: #02abf0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #messageInfo {
+            .ant-message {
+                z-index: 999;
+
+                .ant-message-notice {
+                    .ant-message-notice-content {
+                        height: 42px;
+                        width: 240px;
+
+                        .ant-message-custom-content {
+                            line-height: 24px;
+                            font-size: 16px;
+
+                            .anticon-check-circle {
+                                font-size: 20px;
+                                color: #02abf0;
+                            }
+
+                            .anticon-close {
+                                font-size: 16px;
+                                color: #999;
+                                margin-left: 5px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

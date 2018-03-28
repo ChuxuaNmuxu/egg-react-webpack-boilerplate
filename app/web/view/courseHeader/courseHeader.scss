@@ -1,0 +1,100 @@
+.courseHeader {
+    background-color: white;
+    font-size: 14px;
+
+    :global {
+        $home-nav-height: 84px;
+
+        $logo-height: 44px;
+
+        .course-nav {
+            height: $home-nav-height;
+            border-bottom: 1px solid #e9e9e9;
+            margin-bottom: 20px;
+            background: #fff;
+
+            .ant-menu-horizontal > .ant-menu-item:first-child {
+                background: #f6f9ff;
+            }
+
+            .logo {
+                height: $logo-height;
+                margin: ($home-nav-height - $logo-height) / 2 30px ($home-nav-height - $logo-height) / 2 0;
+                float: left;
+
+                img {
+                    height: 100%;
+                    margin-right: 10px;
+                    vertical-align: top;
+                }
+
+                span {
+                    line-height: $logo-height;
+                    font-family: "微软雅黑";
+                    font-size: 18px;
+                    color: #151b25;
+                }
+            }
+
+            .ant-menu-horizontal,
+            .ant-menu-horizontal > .ant-menu-item,
+            .ant-menu-horizontal > .ant-menu-submenu {
+                border-bottom: 0;
+            }
+
+            .ant-menu-horizontal {
+                & > .ant-menu-item,
+                & > .ant-menu-submenu {
+                    font-size: 16px;
+                    height: $home-nav-height - 1;
+                    line-height: $home-nav-height - 1;
+                }
+            }
+
+            .ant-menu-horizontal > .ant-menu-item:first-child {
+                background: #f6f9ff;
+            }
+
+            .ant-menu-item {
+                padding: 0 16px 0 22px;
+            }
+
+            .profile {
+                .ant-menu {
+                    margin-top: 1px;
+                }
+
+                li:last-child {
+                    padding-right: 0;
+                }
+
+                .loginOut {
+                    padding: 0;
+
+                    span {
+                        margin: 0;
+                    }
+                }
+
+                .logoutBtn {
+                    border: none;
+                    background-color: white;
+                }
+
+                .avatar img {
+                    width: 44px;
+                    height: 44px;
+                    vertical-align: middle;
+                    border-radius: 50%;
+                    background-color: orange;
+                    margin-right: 10px;
+                }
+
+                .item {
+                    // padding: 0 0 0 10px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

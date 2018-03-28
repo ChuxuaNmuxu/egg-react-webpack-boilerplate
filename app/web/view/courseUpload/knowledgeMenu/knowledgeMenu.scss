@@ -1,0 +1,125 @@
+.knowledgeMenu {
+    position: absolute;
+    display: inline;
+    z-index: 2;
+    width: 100%;
+
+    :global {
+        .ant-collapse > .ant-collapse-item > .ant-collapse-header[aria-expanded='true'] {
+            background-color: #fff;
+            border: 1px solid #acacac;
+            width: 117px;
+            top: 1px;
+            position: absolute;
+            z-index: 1001;
+            border-bottom: 0;
+        }
+
+        .ant-collapse-content.ant-collapse-content-active {
+            margin-top: 32px;
+        }
+
+        .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+            padding-left: 0;
+
+            .arrow {
+                position: static;
+            }
+        }
+
+        .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+            height: 32px;
+            line-height: 32px;
+            color: #00c5ff;
+
+            .arrow {
+                bottom: 0;
+            }
+        }
+
+        .ant-collapse-content.ant-collapse-content-active {
+            border: 1px solid #acacac;
+        }
+
+        .knowledgeTreeBox {
+            border: 1px solid #a3a7ad;
+            padding: 5px;
+            height: 193px;
+            overflow-y: auto;
+        }
+
+        .knowledgeContent {
+            background-color: #ddd;
+        }
+
+        .collHeader {
+            width: 80%;
+            display: inline-block;
+            border: none;
+            background: none;
+
+            .ant-collapse-item {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.knowledgeMenu-tabs {
+    :global {
+        .ant-tabs-tab {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .ant-tabs-ink-bar {
+            background-color: #00c4ff;
+        }
+
+        .ant-tabs-tab-disabled {
+            color: #737a85;
+            background-color: #e9eef3;
+            border-radius: 5px;
+        }
+
+        .ant-tabs-tab-active {
+            color: #fff;
+            background-color: #00c4ff;
+            border-radius: 5px;
+        }
+
+        .ant-tabs-tab-active:hover {
+            color: #fff;
+        }
+
+        .knowledgeUl {
+            padding: 0;
+        }
+
+        .left-tree {
+            float: left;
+            width: 49%;
+            border: 1px solid #acacac;
+            height: 200px;
+            overflow-y: auto;
+            margin-right: 5px;
+        }
+
+        .right-tree {
+            margin-left: 5px;
+            width: 49%;
+            float: left;
+            border: 1px solid #acacac;
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        .selected-list {
+            margin-top: 15px;
+        }
+
+        .click {
+            margin-top: 20px;
+        }
+    }
+}

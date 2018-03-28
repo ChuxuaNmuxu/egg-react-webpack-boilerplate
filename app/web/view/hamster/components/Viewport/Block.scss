@@ -1,0 +1,13 @@
+.block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    cursor: pointer;
+    margin: 5px;
+    vertical-align: middle;
+
+    &.active {
+        border-color: red;
+    }
+}

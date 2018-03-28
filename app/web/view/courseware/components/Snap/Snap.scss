@@ -1,0 +1,59 @@
+.SnapWrap {
+    :global {
+        @mixin peak {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: #dcdc00;
+            border-radius: 5px;
+        }
+
+        @mixin snapLine {
+            position: absolute;
+            z-index: 255;
+            background: #dcdc00;
+        }
+
+        .vertical {
+            width: 1px;
+
+            @include snapLine;
+
+            &::before {
+                @include peak;
+
+                top: 0;
+                left: -2px;
+            }
+
+            &::after {
+                @include peak;
+
+                bottom: 0;
+                left: -2px;
+            }
+        }
+
+        .honrizontal {
+            height: 1px;
+
+            @include snapLine;
+
+            &::before {
+                @include peak;
+
+                top: -2px;
+                left: 0;
+            }
+
+            &::after {
+                @include peak;
+
+                top: -2px;
+                right: 0;
+            }
+        }
+    }
+}

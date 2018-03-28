@@ -1,0 +1,149 @@
+.home-header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 40px;
+
+    :global {
+        .home-ceiling {
+            font-size: 12px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #202c37;
+            color: #ddd;
+
+            .home-ceiling-wrapper {
+                .yun-logo {
+                    float: left;
+                    font-size: 12px;
+
+                    a {
+                        color: #899199;
+                    }
+
+                    img {
+                        height: 20px;
+                    }
+                }
+
+                .ant-menu-horizontal > .ant-menu-submenu-selected {
+                    border-bottom: none;
+                }
+
+                .header-text {
+                    color: #899199 !important;
+                    font-size: 12px;
+                    font-weight: 500;
+                    display: inline-block;
+                }
+
+                .right {
+                    float: right;
+                    font-size: 14px;
+
+                    .line-border {
+                        display: inline-block;
+                        width: 1px;
+                        background-color: #28353f;
+                        height: 12px;
+                        position: relative;
+                        right: -20px;
+                    }
+
+                    .ant-menu-submenu-horizontal > .ant-menu {
+                        margin: 0;
+                        border-radius: 0 0 4px 4px;
+
+                        .ant-menu-item {
+                            margin: 0 auto;
+                            height: 40px;
+
+                            a {
+                                color: #999;
+                            }
+                        }
+
+                        .ant-menu-item:hover {
+                            background-color: #f2f2f2;
+
+                            a {
+                                color: #333;
+                            }
+                        }
+                    }
+
+                    .ant-menu-submenu-title {
+                        background-color: #303d48;
+                        padding: 0 10px;
+                    }
+
+                    .ant-menu-submenu-active {
+                        .ant-menu-submenu-title {
+                            background-color: #fff;
+
+                            .icon-renwuxiaotubiao {
+                                color: #8a9299;
+                            }
+                        }
+                    }
+
+                    .text-SubMenu {
+                        color: #8a9299;
+                        font-size: 12px;
+                        max-width: 100px;
+
+                        .name-SubMenu {
+                            display: inline-block;
+                            max-width: 65px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            vertical-align: bottom;
+                        }
+
+                        .icon-renwuxiaotubiao {
+                            color: #44a047;
+                            line-height: 37px;
+                            font-size: 16px;
+                            padding-right: 2px;
+                        }
+
+                        .icon-xiaojiantouxia {
+                            line-height: 37px;
+                            font-size: 16px;
+                            color: #8a9299;
+                            padding-left: 3px;
+                        }
+                    }
+
+                    li {
+                        text-align: center;
+
+                        a[disabled] {
+                            color: red;
+                        }
+                    }
+                }
+
+                .right.ant-menu {
+                    line-height: 40px;
+                    background: none;
+                    border-bottom: none;
+
+                    .ant-menu-item {
+                        border-bottom: 0;
+                        position: relative;
+                        top: 0;
+
+                        &:hover,
+                        &.ant-menu-item-selected {
+                            color: #aac1e0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

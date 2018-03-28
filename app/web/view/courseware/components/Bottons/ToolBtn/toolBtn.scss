@@ -1,0 +1,24 @@
+.tool-btn {
+    display: inline-block;
+    transition: all 0.3s linear;
+    margin: 0 8px;
+    color: #666;
+    cursor: pointer;
+    vertical-align: middle;
+
+    &:hover {
+        color: #009bee;
+        transition: all 0.3s linear;
+    }
+
+    :global {
+        .iconfont {
+            font-size: 28px;
+            vertical-align: middle;
+        }
+
+        .text {
+            vertical-align: middle;
+        }
+    }
+}

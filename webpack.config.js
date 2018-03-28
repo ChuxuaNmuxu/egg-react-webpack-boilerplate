@@ -5,14 +5,15 @@ module.exports = {
   entry: {
     'redux': 'app/web/page/redux/redux.jsx',
     'client': 'app/web/page/client/client.jsx',
-    'ssr': 'app/web/page/ssr/ssr.jsx',
+    'ssr': 'app/web/ssr.jsx',
     'layout': 'app/web/framework/layout/layout.jsx'
   },
   alias: {
     asset: 'app/web/asset',
     component: 'app/web/component',
     framework: 'app/web/framework',
-    store: 'app/web/store'
+    store: 'app/web/store',
+    view: 'app/web/view'
   },
   dll: ['react', 'react-dom'],
   loaders: {

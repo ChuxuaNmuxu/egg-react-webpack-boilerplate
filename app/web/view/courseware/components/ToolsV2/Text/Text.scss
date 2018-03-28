@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.text-tool {
+    :global {
+        .text-tool-wrap {
+            width: 40px;
+            color: #666;
+            transition: color 0.2s ease-out;
+            cursor: pointer;
+
+            &:hover {
+                color: #009bee;
+            }
+        }
+
+        .text-icon {
+            text-align: center;
+            margin: 3px 0;
+        }
+
+        .text-title {
+            text-align: center;
+        }
+    }
+}

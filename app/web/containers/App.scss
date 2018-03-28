@@ -1,0 +1,17 @@
+.app {
+    border: none;
+    height: 100%;
+}
+$brand-primary: #2277ef;
+
+:global {
+    .primary-color {
+        color: $brand-primary;
+    }
+
+    .login-modal {
+        .ant-modal-content {
+            background-color: transparent;
+        }
+    }
+}

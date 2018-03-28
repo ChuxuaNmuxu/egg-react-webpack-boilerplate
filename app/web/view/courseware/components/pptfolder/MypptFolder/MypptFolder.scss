@@ -1,0 +1,164 @@
+.folder {
+    :global {
+        .ant-menu-item {
+            height: auto;
+        }
+
+        .title {
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            color: #333;
+            padding: 0 15px;
+
+            .icon-plus {
+                font-size: 22px;
+                color: #999;
+                cursor: pointer;
+            }
+        }
+
+        .folder-box {
+            .icon-iconfont89 {
+                font-size: 12px;
+                color: #333;
+                margin-right: 10px;
+            }
+
+            .ant-menu-item {
+                border-left: 4px solid #fff;
+                color: #333;
+            }
+
+            .ant-menu-item-selected {
+                border-left: 4px solid #02abf0;
+                transition: none;
+                background: #d9f3fd;
+                color: #02abf0;
+
+                .icon-iconfont89 {
+                    color: #02abf0;
+                }
+            }
+
+            .drop-down-icon {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #999;
+                font-weight: bolder;
+                font-size: 22px;
+            }
+
+            .editoring {
+                background: #fff;
+            }
+
+            .input-box {
+                width: 100%;
+                position: relative;
+                display: inline-block;
+
+                .folder-input-editor {
+                    width: 85%;
+                    padding-right: 15%;
+                }
+
+                .editorErr {
+                    border: 1px solid #f04641;
+                    color: #f04641;
+                }
+
+                .count {
+                    position: absolute;
+                    top: 0;
+                    right: 18%;
+                    color: #ccc;
+                }
+            }
+
+            .err {
+                color: #f04641;
+                font-size: 12px;
+                padding-left: 22px;
+                line-height: 14px;
+            }
+
+            .hover-menu {
+                .ant-dropdown-menu-item {
+                    width: 99px;
+                    height: 35px;
+                    text-align: center;
+                }
+
+                .ant-dropdown-menu-item-active {
+                    background-color: #d9f3fd;
+                    color: #02abf0;
+                }
+            }
+
+            .ant-menu-vertical {
+                border: none;
+            }
+        }
+    }
+}
+
+:global {
+    .delete-modal {
+        width: 303px;
+        height: 381px;
+
+        .anticon-exclamation-circle.anticon {
+            margin: 0 auto;
+            color: #d9f3fd;
+            display: block;
+            float: none;
+            font-size: 98px;
+        }
+
+        .ant-confirm-title {
+            display: block;
+            text-align: center;
+            margin-top: 43px;
+            font-size: 16px;
+            color: #999;
+        }
+
+        .ant-confirm-content {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            font-size: 14px;
+            color: #999;
+            margin-left: 0;
+        }
+
+        .ant-confirm-btns {
+            float: none;
+            text-align: center;
+            position: relative;
+            height: 60px;
+
+            .ant-btn {
+                font-size: 18px;
+                position: absolute;
+                top: 20px;
+                right: -25px;
+                width: 122px;
+                height: 40px;
+                color: #fff;
+                background: #02abf0;
+                border: 1px solid #02abf0;
+            }
+
+            .ant-btn-primary {
+                left: -33px;
+                color: #02abf0;
+                border: 1px solid #02abf0;
+                background: #fff;
+            }
+        }
+    }
+}
+

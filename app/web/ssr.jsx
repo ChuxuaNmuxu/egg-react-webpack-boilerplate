@@ -9,9 +9,12 @@ import Layout from 'framework/layout/layout.jsx';
 import Header from 'component/header/header';
 import SSR from 'component/spa/ssr/ssr';
 import { create } from 'component/spa/ssr/store';
-import routes from 'component/spa/ssr/routes'
+// import Root from './containers/Root';
+// import create from './core/configureStore';
+import routes from 'component/spa/ssr/routers';
 
 const clientRender = () => {
+  console.log(33, window)
   const store = create(window.__INITIAL_STATE__);
   const url = store.getState().url;
   const Entry = () => (<div>
@@ -34,7 +37,9 @@ const clientRender = () => {
 
 const serverRender = (context, options)=> {
   const url = context.state.url;
+  // 匹配路由
   const branch = matchRoutes(routes, url);
+  // 在渲染之前获取数据
   const promises = branch.map(({route}) => {
     const fetch = route.component.fetch;
     return fetch instanceof Function ? fetch() : Promise.resolve(null)

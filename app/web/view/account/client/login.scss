@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.login {
+    :global {
+        .login-spin {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            left: 50%;
+            margin-left: -15px;
+        }
+    }
+}

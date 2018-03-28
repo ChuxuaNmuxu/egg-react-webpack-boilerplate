@@ -1,0 +1,154 @@
+.navigation {
+    :global {
+        .home-nav {
+            height: 100px;
+            top: 40px;
+            width: 100%;
+            background-color: #02abf0;
+            position: fixed;
+            z-index: 999;
+
+            .home-nav-wrapper {
+                .logo {
+                    border-radius: 4px;
+                    margin: 28px 30px 22px 0;
+                    float: left;
+
+                    img {
+                        margin-right: 10px;
+                        vertical-align: top;
+                    }
+                }
+
+                .navSelectUl {
+                    height: 100px;
+                    float: left;
+                    margin-left: 40px;
+                    border-bottom: none;
+
+                    .ant-menu-item {
+                        height: 100%;
+                        background-color: #02abf0;
+                        line-height: 100px;
+                        border-bottom: none;
+
+                        a {
+                            color: #fff;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .ant-menu-item.ant-menu-item-selected {
+                        background-color: #0095d1;
+                    }
+                }
+
+                .menuDiv {
+                    float: right;
+                    position: relative;
+
+                    .newPPTBtn {
+                        background-color: #ffb35a;
+                        height: 46px;
+                        width: 126px;
+                        border-radius: 2px;
+                        margin: 30px 0 28px;
+                        font-size: 16px;
+                        color: #fff;
+                        font-family: MicrosoftYaHei;
+                    }
+
+                    .selectMenu {
+                        position: absolute;
+                        top: 76px;
+
+                        .menuButton {
+                            width: 126px;
+                            height: 40px;
+                            background-color: #fff;
+                            font-size: 16px;
+                            text-align: center;
+                            line-height: 40px;
+                            cursor: pointer;
+
+                            .ant-upload-select {
+                                .ant-upload {
+                                    span {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .menuButton:hover {
+                            background-color: #ecf6fd;
+                            color: #02abf0;
+                        }
+                    }
+
+                    .hide {
+                        display: none;
+                    }
+                }
+            }
+
+            #importCourseModal {
+                .importCourseModal {
+                    .ant-modal-content {
+                        .ant-modal-header {
+                            font-size: 16px;
+                            color: #333;
+                        }
+
+                        .ant-modal-body {
+                            .importBody {
+                                padding: 0 20px;
+                                position: relative;
+
+                                .icon-ppt {
+                                    font-size: 50px;
+                                    color: #ccc;
+                                }
+
+                                .importBodyTitle {
+                                    position: absolute;
+                                    top: 15px;
+                                    left: 80px;
+                                    font-size: 12px;
+                                    color: #333;
+                                }
+
+                                .ant-progress-line {
+                                    width: 75%;
+                                    margin-left: 9px;
+
+                                    .ant-progress-text {
+                                        position: absolute;
+                                        bottom: 28px;
+                                        right: 40px;
+                                    }
+                                }
+
+                                .progressCancel {
+                                    position: absolute;
+                                    top: 38px;
+                                    right: 58px;
+                                    font-size: 16px;
+                                    color: #666;
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                }
+
+                                .progressCancelSpin {
+                                    position: absolute;
+                                    top: 38px;
+                                    right: 58px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

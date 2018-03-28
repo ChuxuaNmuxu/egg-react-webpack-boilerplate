@@ -1,0 +1,21 @@
+.preview-tools {
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 250;
+
+    :global {
+        .preview-exit {
+            color: #ccc;
+            display: inline-block;
+            opacity: 0;
+            transition: all 0.2s;
+        }
+
+        .iconfont {
+            font-size: 28px;
+        }
+    }
+}

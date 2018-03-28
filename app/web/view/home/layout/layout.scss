@@ -1,0 +1,111 @@
+.home-layout {
+    :global {
+        .ant-menu-vertical.ant-menu-sub {
+            padding: 15px 0 !important;
+            margin-top: 0;
+            border-radius: 0 0 2px 2px;
+        }
+
+        .home-header {
+            background: #fff;
+
+            .home-ceiling {
+                font-size: 12px;
+                height: 40px;
+                line-height: 40px;
+                background-color: #151b25;
+                color: #ddd;
+
+                .home-ceiling-wrapper {
+                    .yun-logo {
+                        float: left;
+                        font-size: 18px;
+                        height: 31px;
+                        margin: 4px 24px 5px 0;
+
+                        &,
+                        a {
+                            color: #ddd;
+                        }
+
+                        img {
+                            height: 20px;
+                        }
+                    }
+
+                    .right {
+                        float: right;
+                        font-size: 14px;
+                        font-weight: bold;
+
+                        li {
+                            display: inline-block;
+
+                            a {
+                                color: #778497 !important;
+                            }
+
+                            a[disabled] {
+                                color: red;
+                            }
+                        }
+                    }
+
+                    .right.ant-menu {
+                        line-height: 40px;
+                        background: none;
+                        border-bottom: none;
+                        margin-right: -20px;
+
+                        .ant-menu-item {
+                            border-bottom: 0;
+
+                            &:hover,
+                            &.ant-menu-item-selected {
+                                color: #aac1e0;
+                                background: rgba(42, 71, 136, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .home-content {
+            .home-nav {
+                height: 64px;
+                border-bottom: 1px solid #e9e9e9;
+
+                .logo {
+                    width: 120px;
+                    height: 32px;
+                    background: #eee;
+                    border-radius: 4px;
+                    margin: 16px 50px 16px 0;
+                    float: left;
+                }
+
+                .ant-menu-horizontal,
+                .ant-menu-horizontal > .ant-menu-item,
+                .ant-menu-horizontal > .ant-menu-submenu {
+                    border-bottom: 0;
+                }
+
+                .ant-menu-horizontal > .ant-menu-item {
+                    height: 64px;
+                    border-bottom: 1px solid #e9e9e9;
+                }
+
+                .ant-menu-horizontal > .ant-menu-item:first-child {
+                    background: #f6f9ff;
+                }
+
+                .profile {
+                    li:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

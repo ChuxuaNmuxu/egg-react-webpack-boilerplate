@@ -1,0 +1,202 @@
+.ppt-toolBar {
+    :global {
+        .ppt-tools {
+            height: 60px;
+            position: relative;
+            width: 100%;
+            z-index: 100;
+            // background-color: #3c3d41;
+            // background-image: linear-gradient(180deg, #666, #444);
+            // display: flex;
+            // align-items: center;
+            padding: 5px 55px 5px 20px;
+            font-size: 14px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        .flex-btn {
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            right: 8px;
+            left: unset;
+            transition: all 0.2s;
+            text-align: center;
+            text-indent: 0;
+
+            .iconfont {
+                font-size: 20px;
+            }
+        }
+
+        .flex-btn:hover {
+            color: #009bee;
+        }
+
+        .tool-flex-btn {
+            height: 100%;
+            transform: rotate(90deg);
+        }
+
+        .tool-btn {
+            height: 100%;
+            width: 60px;
+            padding: 0 5px;
+            color: #666;
+            transition: all 0.3s linear;
+            cursor: pointer;
+        }
+
+        .tool-btn:hover {
+            color: #009bee;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .tools-title {
+            text-align: center;
+        }
+
+        .tools-icon {
+            text-align: center;
+            margin: 3px 0;
+        }
+
+        .threePoint {
+            float: left;
+            margin: 12px 0 0 -15px;
+        }
+
+        .ppt-tools-div1-div4-div2 {
+            text-align: center;
+        }
+
+        .ppt-tools-div2 {
+            float: left;
+            height: 100%;
+            // width:57%;
+        }
+
+        .ppt-tools-div3 {
+            float: right;
+            height: 100%;
+        }
+
+        .ppt-tools-div3-div1 {
+            float: left;
+            height: 100%;
+            width: 54px;
+            padding: 2px 5px;
+            color: #666;
+
+            i::before {
+                font-size: 20px;
+                line-height: 46px;
+                margin-left: 11px;
+            }
+        }
+
+        .ppt-tools-div3-div1:hover {
+            cursor: pointer;
+            color: #009bee;
+        }
+
+        .ppt-tools-div3-div2 {
+            float: left;
+            height: 100%;
+            width: 54px;
+            padding: 0 5px;
+
+            i::before {
+                font-size: 20px;
+                line-height: 50px;
+                margin-left: 11px;
+            }
+        }
+
+        .ppt-tools-div3-div2:hover {
+            cursor: pointer;
+            color: #009bee;
+        }
+
+        .ppt-tools-div3-div3 {
+            float: left;
+            height: 100%;
+            width: 54px;
+            padding: 0 5px;
+
+            i::before {
+                font-size: 20px;
+                line-height: 44px;
+                margin-left: 11px;
+            }
+        }
+
+        .ppt-tools-div3-div3:hover {
+            cursor: pointer;
+            color: #009bee;
+        }
+
+        .ppt-tools-div4 {
+            float: right;
+            height: 100%;
+        }
+
+        .ppt-tools-div4-div1 {
+            float: left;
+            height: 100%;
+            width: 54px;
+            padding: 0 5px;
+            background-image: url('../../../../public/images/cexiao.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ppt-tools-div4-div1-noPast {
+            float: left;
+            height: 100%;
+            width: 54px;
+            padding: 0 5px;
+            background-image: url('../../../../public/images/backNoPast.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ppt-tools-div4-div1:hover {
+            color: #009bee;
+            cursor: pointer;
+        }
+
+        .ppt-tools-div4-div2 {
+            float: left;
+            height: 100%;
+            width: 54px;
+            padding: 0 5px;
+            background-image: url('../../../../public/images/cexiao2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ppt-tools-div4-div2-noFuture {
+            float: left;
+            height: 100%;
+            width: 54px;
+            padding: 0 5px;
+            background-image: url('../../../../public/images/forwardNoFuture.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ppt-tools-div4-div2:hover {
+            color: #009bee;
+            cursor: pointer;
+        }
+    }
+}

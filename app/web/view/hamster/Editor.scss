@@ -1,0 +1,41 @@
+.editor {
+    color: #000;
+
+    :global {
+        header {
+            border-bottom: 1px solid;
+        }
+
+        main {
+            position: absolute;
+            top: 51px;
+            bottom: 0;
+            width: 100%;
+
+            .navbar, .propsbar {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 200px;
+            }
+
+            .navbar {
+                left: 0;
+            }
+
+            .propsbar {
+                right: 0;
+            }
+
+            .viewport {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 200px;
+                right: 200px;
+                border-left: 1px solid;
+                border-right: 1px solid;
+            }
+        }
+    }
+}

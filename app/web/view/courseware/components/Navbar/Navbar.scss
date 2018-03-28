@@ -1,0 +1,87 @@
+.navbar {
+    background: transparent;
+    height: 100%;
+
+    :global {
+        .headerTitle {
+            color: #333;
+        }
+
+        .ant-tabs.ant-tabs-card {
+            height: 100%;
+
+            .ant-tabs-bar {
+                margin: 0;
+                border: none;
+
+                .ant-tabs-nav-container {
+                    height: 40px;
+                }
+
+                .ant-tabs-nav {
+                    width: 100%;
+                }
+
+                .ant-tabs-tab {
+                    width: 50%;
+                    margin: 0;
+                    border-radius: 0;
+                    text-align: center;
+                    padding-bottom: 10px;
+                    border: none;
+                    background: #fff;
+                }
+
+                .ant-tabs-tab-active {
+                    background: transparent;
+                }
+            }
+
+            .ant-tabs-content {
+                position: absolute;
+                bottom: 0;
+                top: 58px;
+
+                .ant-tabs-tabpane-active {
+                    height: 100%;
+                }
+            }
+        }
+
+        .flex-btn {
+            right: -7px;
+            transform: translateY(-50%) rotate(180deg);
+            left: unset;
+        }
+    }
+}
+
+:global {
+    .ant-menu-dark .ant-menu-item,
+    .ant-menu-dark .ant-menu-item-group-title,
+    .ant-menu-dark .ant-menu-item > a {
+        color: #333;
+    }
+
+    .ant-menu-dark .ant-menu-item-disabled,
+    .ant-menu-dark .ant-menu-submenu-disabled,
+    .ant-menu-dark .ant-menu-item-disabled > a,
+    .ant-menu-dark .ant-menu-submenu-disabled > a {
+        color: #ccc !important;
+    }
+
+    .ant-menu-dark .ant-menu-item:hover,
+    .ant-menu-dark .ant-menu-item-active,
+    .ant-menu-dark .ant-menu-submenu-active,
+    .ant-menu-dark:not(.ant-menu-inline) .ant-menu-submenu-open,
+    .ant-menu-dark .ant-menu-submenu-selected,
+    .ant-menu-dark .ant-menu-submenu:hover,
+    .ant-menu-dark .ant-menu-submenu-title:hover {
+        background: rgba(0, 155, 238, 0.2);
+        color: #009bee;
+    }
+
+    .cj-contextmenu-inner .ant-menu-item-divider {
+        background-color: rgba(153, 153, 153, 0.5) !important;
+    }
+}

@@ -1,0 +1,123 @@
+.courseUpload {
+    display: inline;
+
+    :global {
+        .uploadBtn {
+            background-color: #00c4ff;
+            border: 1px solid #00c4ff;
+        }
+    }
+}
+
+.course-modal {
+    :global {
+        .ant-modal-title {
+            font-size: 18px;
+        }
+
+        .move-t {
+            margin-top: 10px;
+
+            .fileInput {
+                width: 65px;
+            }
+
+            .knowledgeErr {
+                color: #f46e65;
+                line-height: 35px;
+            }
+
+            .selectedKnowledge {
+                margin-left: 5px;
+                margin-top: 5px;
+            }
+        }
+
+        .uploadFile {
+            position: relative;
+
+            .fileInput {
+                width: 109px;
+                height: 32px;
+                z-index: 2;
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .fileSpan {
+                margin-left: 15px;
+                line-height: 32px;
+                font-size: 16px;
+                font-family: Consolas;
+                display: inline-block;
+                width: 308px;
+                vertical-align: middle;
+                overflow: hidden;
+                height: 32px;
+                text-align: justify;
+            }
+
+            .filePostfix {
+                line-height: 32px;
+                font-size: 16px;
+                font-family: Consolas;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .displayNone {
+                display: none;
+            }
+        }
+
+        .mandatory {
+            color: red;
+            display: block;
+            float: left;
+            margin-top: 5px;
+            margin-right: 5px;
+            font-size: 20px;
+        }
+
+        .modal-ok {
+            background-color: #00c5ff;
+            border: none;
+        }
+
+        .modal-key {
+            line-height: 32px;
+            background: #e9eef3;
+            display: block;
+            float: left;
+            width: 100px;
+            text-align: center;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        .modal-input {
+            color: #00c5ff;
+        }
+
+        .modal-btn {
+            color: #00c5ff;
+            font-size: 12px;
+        }
+
+        .modal-description {
+            height: 150px;
+        }
+
+        .move-r {
+            margin-left: 13px;
+        }
+
+        .ant-collapse.collHeader {
+            .ant-collapse-content-active {
+                z-index: 1000;
+            }
+        }
+    }
+}

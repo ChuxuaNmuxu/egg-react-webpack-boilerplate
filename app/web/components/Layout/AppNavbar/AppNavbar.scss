@@ -1,0 +1,135 @@
+$navbar-height: 40px;
+$navbar-color: #899199;
+$navbar-hover-color: #b9c1c9;
+$submenu-bg-color: #fff;
+$submenu-hover-color: #8a9299;
+
+.app-navbar {
+    background-color: #202c37;
+    height: $navbar-height;
+    line-height: $navbar-height;
+    color: $navbar-color;
+    z-index: 1000;
+    font-size: 12px;
+
+    :global {
+        .navbar-wrapper {
+            padding: 0 30px;
+        }
+
+        .navbar-wrapper.ui.container {
+            padding: 0;
+        }
+
+        a {
+            text-align: center;
+            color: $navbar-color;
+
+            &:hover {
+                color: $navbar-hover-color;
+            }
+        }
+
+        .iconfont {
+            font-size: 18px;
+            vertical-align: -1px;
+        }
+
+        .navbar-header {
+            float: left;
+        }
+
+        .navbar-right {
+            float: right;
+        }
+
+        .navbar-nav {
+            .ant-menu {
+                line-height: $navbar-height;
+                color: $navbar-color;
+            }
+
+            & > .ant-menu {
+                background: none;
+            }
+
+            .ant-menu-horizontal {
+                &,
+                & > .ant-menu-item,
+                & > .ant-menu-submenu {
+                    border-bottom: none;
+                }
+
+                & > .ant-menu-item > a {
+                    color: $navbar-color;
+                    text-align: center;
+                }
+
+                & > .ant-menu-item:hover > a {
+                    color: $navbar-hover-color;
+                }
+
+                & > .ant-menu-item::before {
+                    content: "|";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    color: #28353f;
+                }
+
+                & > .ant-menu-item:first-child::before {
+                    content: "";
+                }
+
+                .ant-menu-submenu {
+                    &:hover .ant-menu-submenu-title {
+                        background-color: $submenu-bg-color;
+
+                        &,
+                        .iconfont {
+                            color: $submenu-hover-color;
+                        }
+                    }
+
+                    .ant-menu-submenu-title {
+                        background-color: #303d48;
+                        color: $navbar-color;
+                        height: $navbar-height;
+
+                        &:hover {
+                            color: $submenu-hover-color;
+                        }
+                    }
+
+                    .ant-menu-sub {
+                        border-radius: 1px;
+                        margin-top: 0;
+                        border-top: 1px solid #f2f2f2;
+                        background: $submenu-bg-color;
+                        color: $submenu-hover-color;
+                        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+
+                        & > .ant-menu-item {
+                            margin-top: 0;
+                            height: $navbar-height;
+                            line-height: $navbar-height;
+                        }
+
+                        & > .ant-menu-item:hover {
+                            background-color: #f2f2f2;
+
+                            a {
+                                text-align: center;
+                            }
+
+                            a:hover {
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

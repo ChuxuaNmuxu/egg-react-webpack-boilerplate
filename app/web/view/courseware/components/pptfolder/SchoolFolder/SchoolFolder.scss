@@ -1,0 +1,45 @@
+.school-folder {
+    :global {
+        .ant-menu-item {
+            height: auto;
+        }
+
+        .title {
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            color: #333;
+            padding: 0 15px;
+
+            .school-folder-select {
+                position: absolute;
+                right: 0;
+                top: 6px;
+            }
+        }
+
+        .folder-box {
+            .icon-iconfont89 {
+                font-size: 12px;
+                color: #333;
+                margin-right: 10px;
+            }
+
+            .ant-menu-item {
+                border-left: 4px solid #fff;
+                color: #333;
+            }
+
+            .ant-menu-item-selected {
+                border-left: 4px solid #02abf0;
+                transition: none;
+                background: #d9f3fd;
+                color: #02abf0;
+
+                .icon-iconfont89 {
+                    color: #02abf0;
+                }
+            }
+        }
+    }
+}

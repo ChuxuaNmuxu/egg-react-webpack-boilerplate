@@ -1,0 +1,55 @@
+.flex-btn {
+    $width: 20px;
+
+    $half-width: 0.5 * $width;
+
+    width: $width;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -1 * $half-width + 3px;
+    line-height: 200px;
+    vertical-align: middle;
+    text-align: left;
+    cursor: pointer;
+    z-index: 225;
+    font-size: 20px;
+    text-indent: -6px;
+
+    :global {
+        @mixin content {
+            display: block;
+            width: $half-width;
+            height: 200px;
+            border-radius: 12px 0 0 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .content {
+            @include content;
+
+            left: 0;
+            opacity: 0;
+            background-color: #f3f3f3;
+            transition: all 0.3s;
+        }
+
+        .content::before {
+            @include content;
+
+            content: '';
+            right: 0;
+            background-color: transparent;
+        }
+    }
+}
+
+:global {
+    .flex-btn:hover {
+        .content {
+            opacity: 1;
+        }
+    }
+}

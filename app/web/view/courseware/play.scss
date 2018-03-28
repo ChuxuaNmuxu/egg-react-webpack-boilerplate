@@ -1,0 +1,19 @@
+.ppt-play {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    // background: #222 url(./ppt_bg.jpg) no-repeat;
+
+    :global {
+        @import '../../../../node_modules/reveal.js/css/reveal';
+
+        .controls {
+            height: 90px;
+
+            .navigate-up,
+            .navigate-down {
+                display: none;
+            }
+        }
+    }
+}

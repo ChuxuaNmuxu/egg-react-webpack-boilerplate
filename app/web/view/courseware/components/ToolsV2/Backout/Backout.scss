@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.back-out {
+    :global {
+        .back-out-wrap {
+            float: left;
+            width: 54px;
+            transition: color 0.2s ease-out;
+
+            //&:hover {
+            //    .back-out-icon {
+            //        color: #009bee;
+            //    }
+            //}
+        }
+
+        .back-out-icon {
+            font-size: 21px;
+            color: #666;
+            transition: color 0.2s ease-out;
+
+            &:hover {
+                color: #009bee;
+                cursor: pointer;
+            }
+        }
+
+        .visible {
+            color: #666;
+        }
+
+        .invisible {
+            color: #ccc;
+        }
+
+        //.visible {
+        //    background-image: url('../../../../../public/images/cexiao.png');
+        //    background-repeat: no-repeat;
+        //    background-position: center;
+        //}
+        //
+        //.invisible {
+        //    background-image: url('../../../../../public/images/backNoPast.png');
+        //    background-repeat: no-repeat;
+        //    background-position: center;
+        //}
+    }
+}

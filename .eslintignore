@@ -14,3 +14,6 @@ plugins/
 app/web/asset/
 app/view/
 test.js
+
+app/web
+app/config

@@ -1,0 +1,128 @@
+.courseItem {
+    :global {
+        .itemList {
+            background-color: white !important;
+            margin-bottom: 15px !important;
+            padding-top: 0 !important;
+
+            .header {
+                border-bottom: 1px solid #e9eef3;
+                width: 100%;
+                padding: 14px 0 14px 14px;
+                word-break: break-all;
+
+                .fileTypeImg {
+                    width: 16px;
+                    margin-top: 5px;
+                    // height: 25px;
+                    // position: relative;
+                    // top: 5px;
+                    // 解决换行图片掉到最下面
+                    float: left;
+                }
+
+                .headerLeft {
+                    color: #333;
+                    line-height: 26px;
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    .headerLeft {
+                        width: 87%;
+                    }
+                }
+
+                @media screen and (max-width: 1199px) {
+                    .headerLeft {
+                        width: 86%;
+                    }
+                }
+
+                @media screen and (max-width: 991px) {
+                    .headerLeft {
+                        width: 84%;
+                    }
+                }
+
+                @media screen and (max-width: 719px) {
+                    .headerLeft {
+                        width: 83%;
+                    }
+                }
+
+                @media screen and (max-width: 664px) {
+                    .headerLeft {
+                        width: 82%;
+                    }
+                }
+
+                @media screen and (max-width: 619px) {
+                    .headerLeft {
+                        width: 81%;
+                    }
+                }
+
+                @media screen and (max-width: 578px) {
+                    .headerLeft {
+                        width: 80%;
+                    }
+                }
+
+                .headerBtn {
+                    float: right;
+                    padding-right: 1%;
+                    font-size: 14px;
+                    font-weight: 300;
+
+                    .headerBtn1 {
+                        border: none;
+                        background-color: white;
+                        color: #72777f;
+                    }
+                }
+            }
+        }
+
+        .meta {
+            padding: 0 15px;
+
+            .knowledgeSpan {
+                line-height: 150%;
+            }
+        }
+
+        .extra {
+            padding: 0 0 0 14px !important;
+            margin-top: 10px !important;
+        }
+
+        .itemContent {
+            position: relative;
+        }
+
+        .itemBtn {
+            position: absolute;
+            right: 1%;
+            bottom: -6px;
+            background-color: #00c4ff;
+            color: #fff;
+            width: 100px;
+            height: 35px;
+            z-index: 2;
+        }
+
+        .itemPagination {
+            margin-top: 10px;
+            margin-bottom: 50px;
+            text-align: center;
+
+            ul {
+                display: inline-block;
+                // float: right;
+            }
+        }
+    }
+}

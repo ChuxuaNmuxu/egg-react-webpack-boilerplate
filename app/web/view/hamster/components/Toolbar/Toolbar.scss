@@ -1,0 +1,21 @@
+.toolbar {
+    height: 50px;
+    text-align: center;
+    padding: 4px;
+
+    :global {
+        .blocks {
+            display: inline-block;
+
+            .block-item {
+                display: inline-block;
+                padding: 0 5px;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 1px 1px 2px 2px #ddd inset;
+                }
+            }
+        }
+    }
+}

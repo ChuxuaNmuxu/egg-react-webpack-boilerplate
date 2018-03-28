@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.nav-header {
+    height: 62px;
+    display: flex;
+    align-items: center;
+
+    :global {
+        .info-wrap {
+            flex: 0.2;
+            display: flex;
+            align-items: center;
+
+            .info-menu-wrap {
+                height: 40px;
+                cursor: pointer;
+
+                .caidan-size {
+                    font-size: 28px;
+                }
+            }
+
+            .info-title-wrap {
+                padding-left: 20px;
+
+                .info-title {
+                    font-size: 18px;
+                    color: #333;
+                }
+            }
+
+            .info-change-wrap {
+                padding-left: 12px;
+
+                .info-change {
+                    font-size: 14px;
+                    color: #999;
+                }
+            }
+        }
+
+        .tools-area-wrap {
+            flex: 0.8;
+
+            .tools-area {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .operation-area-wrap {
+            flex: 0.2;
+
+            .operation--area {
+                display: flex;
+            }
+        }
+
+        .clearfix {
+            display: block;
+
+            &::before {
+                content: ' ';
+                display: table;
+                clear: both;
+            }
+
+            &::after {
+                content: '.';
+                visibility: hidden;
+                display: block;
+                height: 0;
+                clear: both;
+            }
+        }
+    }
+}

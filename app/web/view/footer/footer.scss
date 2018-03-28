@@ -1,0 +1,23 @@
+.commonFooter {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #151b25;
+    color: #778497;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    height: 80px;
+    padding: 15px 0 20px;
+
+    :global {
+        .line1 {
+            margin-bottom: 10px;
+
+            a {
+                color: #778497;
+            }
+        }
+    }
+}

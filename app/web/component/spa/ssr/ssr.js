@@ -1,3 +1,23 @@
+// import React, { Component } from 'react';
+// import { connect } from 'react-redux';
+// import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+// import routers from './routers';
+import Hamster from 'view/hamster';
+
+// class App extends Component {
+//   render() {
+//     return <div>
+//       <Switch>
+//           {
+//               routers.map(router => <Route {...router} />)
+//           }
+//       </Switch>
+//     </div>;
+//   }
+// }
+
+// export default App;
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
@@ -32,7 +52,7 @@ class App extends Component {
         </Menu.Item>
       </Menu>
       <Switch>
-        <Route path="/ssr/about" component={About}/>
+        <Route path="/ssr/about" component={Hamster}/>
         <Route path="/ssr" component={Home}/>
       </Switch>
     </div>;

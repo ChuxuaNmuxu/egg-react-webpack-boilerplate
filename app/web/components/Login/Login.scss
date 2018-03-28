@@ -1,0 +1,110 @@
+:global {
+    body {
+        // background: #f4f4f4 url(./images/bg.gif) repeat top left !important;
+    }
+}
+
+.login-card {
+    width: 380px;
+    max-width: 450px;
+    margin: auto;
+    border: none;
+    //box-shadow: 1px 1px 7px #ccc;
+    border-radius: 0;
+
+    :global {
+        .ant-card-head {
+            height: initial;
+            line-height: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: steelblue;
+            color: #fff;
+
+            .ant-card-head-title {
+                font-size: 22px;
+                font-weight: bold;
+            }
+        }
+
+        .ant-card-extra {
+            line-height: 39px;
+
+            a.help {
+                color: antiquewhite;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+        .ant-card-body {
+            padding: 0;
+
+            .error {
+                position: absolute;
+                top: 81px;
+                left: 45px;
+                color: #f04134;
+            }
+
+            .login-form {
+                padding: 45px;
+
+                .ant-form-item {
+                    margin-bottom: 30px;
+                }
+
+                .ant-form-item:last-child {
+                    margin-bottom: 0;
+                }
+
+                .ant-input-wrapper {
+                    box-shadow: 0 0 8px #f0f0f0;
+                    background: -webkit-gradient(linear, left top, left 25, from(#fff), color-stop(4%, #eee), to(#fff));
+                }
+
+                .ant-input-group-addon,
+                .ant-input {
+                    font-size: 16px;
+                    border-radius: 0;
+                    border-color: #e5e5e5;
+                    background: none;
+                }
+
+                .ant-input-group-addon {
+                    padding: 9px 12px;
+                    color: darkcyan;
+                }
+
+                .ant-input {
+                    height: 38px;
+                }
+
+                .ant-form-extra {
+                    color: cadetblue;
+                }
+            }
+
+            .operater {
+                padding: 20px 25px;
+                background: steelblue;
+                text-align: right;
+
+                .a-register {
+                    float: left;
+                    line-height: 32px;
+                    color: cadetblue;
+                    text-shadow: 1px 1px 1px #000;
+                }
+
+                .login-form-button {
+                    width: 150px;
+                    color: #333;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.courseTree {
+    min-height: 559px;
+    background-color: white;
+
+    :global {
+        .treeHeader {
+            height: 40px;
+            border-bottom: 1px solid #e9eef3;
+            text-align: center;
+            // background-color: #00c4ff;
+        }
+
+        .courseHeaderLeft {
+            float: left;
+            padding: 10px;
+            font-weight: 700;
+        }
+
+        .courseHeaderRight {
+            float: right;
+
+            .ant-select {
+                width: 70px;
+                padding: 5px 0;
+                margin-right: 5px;
+            }
+        }
+
+        .allSelect {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 10px;
+            background-color: #808080;
+            border-color: #fff;
+        }
+
+        .allSelected {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 10px;
+            background-color: #108ee9;
+            border-color: #108ee9;
+        }
+    }
+}

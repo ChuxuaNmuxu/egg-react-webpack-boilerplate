@@ -1,0 +1,19 @@
+.setting-form {
+    :global {
+        .ant-form-item-label {
+            text-align: left;
+        }
+
+        .label-wrapper {
+            display: inline-block;
+        }
+
+        .label-content {
+            padding-right: 5px;
+        }
+
+        .label-addition {
+            color: #a2a2a2;
+        }
+    }
+}

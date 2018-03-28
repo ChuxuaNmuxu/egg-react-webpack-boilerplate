@@ -1,0 +1,61 @@
+.courseware-title {
+    :global {
+        @mixin titleInput {
+            border: none;
+            font-size: 16px;
+            background-color: transparent;
+            outline: none;
+            border-radius: 0;
+            height: 32px;
+            color: #666;
+        }
+
+        .headerTitle {
+            @include titleInput;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 7px;
+        }
+
+        .headerInput {
+            @include titleInput;
+
+            border-bottom: 1px solid #888;
+            line-height: 2em;
+        }
+
+        .lh1 {
+            line-height: 1em;
+        }
+
+        .ant-form-item {
+            margin-bottom: 0;
+        }
+
+        .ant-input.headerInput:focus {
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+
+        .has-error .ant-input:focus {
+            box-shadow: none;
+        }
+
+        .has-success .ant-input:focus {
+            box-shadow: none;
+        }
+
+        .has-error .ant-input .headerInput:focus {
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+
+        .ant-form-explain {
+            margin-top: 10px;
+        }
+    }
+}

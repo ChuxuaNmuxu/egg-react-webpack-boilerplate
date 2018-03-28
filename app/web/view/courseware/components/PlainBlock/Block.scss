@@ -1,0 +1,42 @@
+.play-block-content {
+    :global {
+        .block-content {
+            position: relative;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: inherit;
+            }
+
+            strong {
+                font-weight: bold;
+            }
+
+            em {
+                font-style: italic;
+            }
+
+            sup {
+                font-size: 11px;
+                position: relative;
+                top: -8px;
+                display: inline-flex;
+            }
+
+            sub {
+                font-size: 11px;
+                position: relative;
+                bottom: -8px;
+                display: inline-flex;
+            }
+
+            p:empty {
+                height: 23px;
+            }
+        }
+    }
+}

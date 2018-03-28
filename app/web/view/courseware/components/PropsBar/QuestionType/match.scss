@@ -1,0 +1,30 @@
+.match {
+    :global {
+        .line-wrap {
+            font-size: 0;
+        }
+
+        .match-list {
+            width: 40px;
+            vertical-align: top;
+        }
+
+        .match-line-area {
+            width: calc(100% - 80px);
+            vertical-align: top;
+        }
+
+        .match-btn {
+            margin-bottom: 10px;
+            height: 30px;
+        }
+
+        .match-btn:last-child {
+            margin-bottom: 0;
+        }
+
+        .active {
+            background: #b87333;
+        }
+    }
+}
