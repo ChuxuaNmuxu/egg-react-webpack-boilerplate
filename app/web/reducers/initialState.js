@@ -12,7 +12,7 @@ try {
 } catch (e) {
     visitor = null;
 }
-window.visitor = visitor;
+// window.visitor = visitor;
 const isAdmin = Cookies.get('isAdmin');
 const id = uuid.v4();
 export default {

@@ -17,7 +17,14 @@ module.exports = {
   },
   dll: ['react', 'react-dom'],
   loaders: {
-
+    scss:{
+        enable: true, 
+        test: /\.scss/,
+        use: [{loader: 'css-loader', options: {modules: true}}, {  
+          loader: 'sass-loader'
+       }],
+       postcss: true
+    }
   },
   plugins: {
 
@@ -25,4 +32,4 @@ module.exports = {
   done() {
     console.log('---webpack compile finish---');
   }
-};
+}

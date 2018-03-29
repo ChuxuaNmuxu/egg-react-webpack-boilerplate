@@ -4,12 +4,13 @@
     ["env",  { "modules": false }]
   ],
   "plugins": [
+    "transform-runtime",
     "react-hot-loader/babel",
     "transform-object-assign",
     "transform-decorators-legacy",
      "syntax-dynamic-import",
      "transform-object-rest-spread",
      ["transform-class-properties", { "spec": true }],
-    ["import", { libraryName: "antd", style: "css" }]],
+    ["import", { "libraryName": "antd", "style": "css" }]],
   "comments": false
 }

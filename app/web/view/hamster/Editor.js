@@ -9,6 +9,7 @@ import Propsbar from './components/Propsbar';
 import Navbar from './components/Navbar';
 import Viewport from './components/Viewport';
 import {HAMSTER} from '../../actions/actionTypes';
+console.log('styleS: ', styles)
 
 class Editor extends React.Component {
     state = {}

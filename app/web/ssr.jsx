@@ -8,13 +8,12 @@ import { AppContainer } from 'react-hot-loader';
 import Layout from 'framework/layout/layout.jsx';
 import Header from 'component/header/header';
 import SSR from 'component/spa/ssr/ssr';
-import { create } from 'component/spa/ssr/store';
+// import { create } from 'component/spa/ssr/store';
 // import Root from './containers/Root';
-// import create from './core/configureStore';
+import create from './core/configureStore';
 import routes from 'component/spa/ssr/routers';
 
 const clientRender = () => {
-  console.log(33, window)
   const store = create(window.__INITIAL_STATE__);
   const url = store.getState().url;
   const Entry = () => (<div>

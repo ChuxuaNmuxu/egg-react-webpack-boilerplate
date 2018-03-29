@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import { routerReducer as routing } from 'react-router-redux';
 
-import account from './account';
-import course from './course';
-import courseware from './courseware/';
-import courseEntry from './courseEntry';
+// import account from './account';
+// import course from './course';
+// import courseware from './courseware/';
+// import courseEntry from './courseEntry';
 import hamster from './hamster';
 
 /**
@@ -30,11 +30,11 @@ function logSlowReducers (reducers, thresholdInMs = 5) {
 }
 
 let reducers = {
-    account,
-    course,
-    courseware,
-    routing,
-    courseEntry,
+    // account,
+    // course,
+    // courseware,
+    // routing,
+    // courseEntry,
     hamster
 };
 if (process.env.NODE_ENV !== 'production') {
