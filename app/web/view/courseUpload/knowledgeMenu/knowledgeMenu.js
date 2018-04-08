@@ -1,5 +1,6 @@
-import React, {Component, PropTypes} from 'react';
-import CSSModules from 'react-css-modules';
+// import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';import CSSModules from 'react-css-modules';
 import styles from './knowledgeMenu.scss';
 import {connect} from 'react-redux';
 import { Collapse, Tabs, Button, Row, Col, Tree } from 'antd';

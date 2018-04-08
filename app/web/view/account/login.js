@@ -1,5 +1,6 @@
-import React, {Component, PropTypes} from 'react';
-import { connect } from 'react-redux';
+// import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';import { connect } from 'react-redux';
 import CSSModules from 'react-css-modules';
 import url from 'url';
 import Cookies from 'js-cookie';

@@ -1,5 +1,6 @@
-import React, {Component, PropTypes} from 'react';
-import CSSModules from 'react-css-modules';
+// import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';import CSSModules from 'react-css-modules';
 import styles from './courseTree.scss';
 import {connect} from 'react-redux';
 import {Tree, Select, Alert, Button} from 'antd';

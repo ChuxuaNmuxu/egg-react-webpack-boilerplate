@@ -2,7 +2,7 @@
 // import Login from 'view/account/client/login';
 // import Logout from 'view/account/client/logout';
 // import Play from 'view/courseware/play';
-// import Editor from 'view/courseware/editor';
+import Editor from 'view/courseware/editor';
 import Hamster from 'view/hamster';
 
 const NotFound = () => {
@@ -22,7 +22,15 @@ const NotFound = () => {
 const routes = [
   {
     path: '/',
-    component: Hamster,
+    component: Hamster
+    // fetch: () => Promise.resolve({
+    //   courseware: {
+    //   }
+    // })
+  },
+  {
+    path: '/editor',
+    component: Editor,
     fetch: () => Promise.resolve({
       hamster: {
         blocks: [],

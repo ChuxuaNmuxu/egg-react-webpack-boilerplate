@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react';
+// import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types'
 import Cookies from 'js-cookie';
 import {Base64} from 'js-base64';
 import { withRouter } from 'react-router'
