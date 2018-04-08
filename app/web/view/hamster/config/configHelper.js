@@ -17,7 +17,6 @@ class ConfigHelper {
     initBlocks () {
         let blocks = config.blocks.concat(extensions.blocks || List([]));
         this.blocks = blocks.map(block => config.defaultBlockConfig.mergeDeep(block));
-        console.log(19, this.blocks.toJS())
     }
 
     getBlock (name) {

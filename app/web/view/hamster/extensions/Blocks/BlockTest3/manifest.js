@@ -4,7 +4,6 @@ export default {
     icon: 'iconfont icon-wenben', // 图标
     description: '这是测试自定义事件默认模板', // 描述
     onClick: function (block, BlockUtils) {
-        console.log(43, '自定义点击事件', block.toJS())
         BlockUtils.addBlock(block);
     },
     toolbar: null, // 自定义工具栏

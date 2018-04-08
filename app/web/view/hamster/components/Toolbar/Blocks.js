@@ -32,7 +32,6 @@ Block.propTypes = {
 }
 
 export const Component = (props) => {
-    console.log(6, configHelper.blocks)
     return (
         <div className='blocks'>
             {

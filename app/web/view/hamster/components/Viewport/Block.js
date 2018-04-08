@@ -8,8 +8,6 @@ import configHelper from '../../config/configHelper';
 import BlockUtils from '../../Utils/BlockUtils';
 
 const handleClick = (e, block) => {
-    console.log(9, e, block.toJS());
-    console.log(10, configHelper.getBlock(block.get('type')).toJS());
     BlockUtils.activateBlock([block.get('id')]);
 }
 

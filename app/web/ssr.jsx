@@ -17,7 +17,6 @@ const clientRender = () => {
   const store = create(window.__INITIAL_STATE__);
   const url = store.getState().url;
   const Entry = () => (<div>
-    <Header></Header>
     <Provider store={ store }>
       <BrowserRouter>
         <SSR url={ url }/>
@@ -41,7 +40,7 @@ const serverRender = (context, options)=> {
   const branch = matchRoutes(routes, url);
   // 在渲染之前获取数据
   const promises = branch.map(({route}) => {
-    const fetch = route.component.fetch;
+    const fetch = route.fetch;
     return fetch instanceof Function ? fetch() : Promise.resolve(null)
   });
   return Promise.all(promises).then(data => {
@@ -55,7 +54,6 @@ const serverRender = (context, options)=> {
     return () =>(
       <Layout>
         <div>
-          <Header></Header>
           <Provider store={store}>
             <StaticRouter location={url} context={{}}>
               <SSR url={url}/>

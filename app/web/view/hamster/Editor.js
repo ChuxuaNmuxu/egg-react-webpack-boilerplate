@@ -9,7 +9,6 @@ import Propsbar from './components/Propsbar';
 import Navbar from './components/Navbar';
 import Viewport from './components/Viewport';
 import {HAMSTER} from '../../actions/actionTypes';
-console.log('styleS: ', styles)
 
 class Editor extends React.Component {
     state = {}
@@ -49,9 +48,11 @@ Editor.propTypes = {
     current: PropTypes.any
 }
 
-const mapStateToProps = ({hamster}) => ({
-    blocks: hamster.get('blocks'),
-    current: hamster.get('current')
-});
+const mapStateToProps = ({hamster}) => {
+    return {
+        blocks: hamster.get('blocks'),
+        current: hamster.get('current')
+    }
+};
 
 export default connect(mapStateToProps)(CSSModules(Editor, styles));

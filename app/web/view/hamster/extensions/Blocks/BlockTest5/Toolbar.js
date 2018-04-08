@@ -6,7 +6,6 @@ export const Toolbar = (props) => {
     return <div
       onClick={(e) => {
           e.stopPropagation();
-          console.log(80, '自定义在模板中的事件', block.toJS())
           BlockUtils.addBlock(block)
       }}>
         {block.get('title')}

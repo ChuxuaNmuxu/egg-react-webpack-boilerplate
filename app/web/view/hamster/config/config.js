@@ -6,7 +6,6 @@ export const defaultBlockConfig = fromJS({
     icon: 'iconfont icon-link', // 图标
     description: '这是默认元素', // 描述
     onClick: function (block, BlockUtils) {
-        console.log(9, '默认点击事件', block.toJS());
         BlockUtils.addBlock(block);
     },
     toolbar: null, // 自定义工具栏
