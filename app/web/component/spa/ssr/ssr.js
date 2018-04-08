@@ -52,8 +52,8 @@ class App extends Component {
         </Menu.Item>
       </Menu>
       <Switch>
-        <Route path="/ssr/about" component={Hamster}/>
-        <Route path="/ssr" component={Home}/>
+        <Route path="/ssr" component={Hamster}/>
+        <Route path="/ssr/about" component={Home}/>
       </Switch>
     </div>;
   }

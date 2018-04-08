@@ -35,6 +35,7 @@ const clientRender = () => {
 };
 
 const serverRender = (context, options)=> {
+  // 来自controller
   const url = context.state.url;
   // 匹配路由
   const branch = matchRoutes(routes, url);
@@ -48,6 +49,7 @@ const serverRender = (context, options)=> {
     data.forEach(item => {
       Object.assign(initState, item);
     });
+    // context.state传递渲染之前服务端请求到的数据
     context.state = Object.assign({}, context.state, initState);
     const store = create(initState);
     return () =>(

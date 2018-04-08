@@ -14,7 +14,7 @@ module.exports = app => {
 
     async ssr() {
       const { ctx } = this;
-      await ctx.render('ssr.js', { url: ctx.url });
+      await ctx.render('ssr.js', { url: ctx.url});
     }
 
   };

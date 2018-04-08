@@ -19,15 +19,35 @@ module.exports = {
   loaders: {
     scss:{
         enable: true, 
-        test: /\.scss/,
-        use: [{loader: 'css-loader', options: {modules: true}}, {  
+        test: /\.scss$/,
+        use: [{
+          loader: 'css-loader',
+          options: {
+            modules: true
+          }
+        }, {  
           loader: 'sass-loader'
        }],
        postcss: true
-    }
+    },
+    // sass: {
+    //   enable: false
+    // },
+    // css: {
+    //   enable: false
+    // }
+    // sass:{
+    //     enable: true, 
+    //     test: /\.scss$/,
+    //     use: [{loader: 'css-loader'}, {  
+    //       loader: 'sass-loader'
+    //   }],
+    //   postcss: true
+    // }
   },
   plugins: {
-
+    ignore: false,
+    modulereplacement: false
   },
   done() {
     console.log('---webpack compile finish---');
