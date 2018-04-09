@@ -49,6 +49,7 @@ module.exports = {
     ignore: false,
     modulereplacement: false
   },
+  devtool: 'cheap-module-eval-source-map',
   done() {
     console.log('---webpack compile finish---');
   }

@@ -3,6 +3,7 @@
 // import Logout from 'view/account/client/logout';
 // import Play from 'view/courseware/play';
 import Editor from 'view/courseware/editor';
+import CourseEntry from 'view/courseware/courseEntry';
 import Hamster from 'view/hamster';
 
 const NotFound = () => {
@@ -36,6 +37,14 @@ const routes = [
   {
     path: '/editor/:id',
     component: Editor,
+    // fetch: () => Promise.resolve({
+    //   courseware: {
+    //   }
+    // })
+  },
+  {
+    path: '/courseEntry',
+    component: CourseEntry,
     // fetch: () => Promise.resolve({
     //   courseware: {
     //   }
