@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Button} from 'antd';
-// import Reveal from 'reveal.js';
-let reveal = {}
+import Reveal from 'reveal.js';
+// let reveal = {}
 import { connect } from 'react-redux';
 import CSSModules from 'react-css-modules';
 
@@ -48,9 +48,9 @@ class TeachingLink extends React.Component {
         })
     }
 
-    componentDidMount () {
-        Reveal = require('reveal.js').default;
-    }
+    // componentDidMount () {
+    //     Reveal = require('reveal.js').default;
+    // }
 
     render () {
         return (

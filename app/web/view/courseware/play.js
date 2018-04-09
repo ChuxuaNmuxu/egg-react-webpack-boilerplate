@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CSSModules from 'react-css-modules';
-// import Reveal from 'reveal.js';
+import Reveal from 'reveal.js';
 // import 'reveal.js/css/reveal.css';
 import io from 'socket.io-client';
 // import styles from './components/play/play.scss'
@@ -15,7 +15,7 @@ import transfrom from './components/DataTransfrom';
 import styles from './play.scss';
 import {commonHandlesHoc} from './components/helper/Hocs';
 
-let reveal = {}
+// let reveal = {}
 window.Reveal = Reveal;
 window.Pad = Pad;
 
@@ -71,7 +71,7 @@ class Play extends React.PureComponent {
     }
 
     componentDidMount () {
-        Reveal = require('reveal.js').default;
+        // Reveal = require('reveal.js').default;
         const { dispatch, params: { id } } = this.props;
 
         if (window.opener.CJWindow === 'onlinePPTEditor') {

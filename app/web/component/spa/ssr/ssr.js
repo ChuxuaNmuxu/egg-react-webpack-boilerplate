@@ -11,8 +11,8 @@ class App extends Component {
       <Switch>
           {
               routers.map(router => {
-                const {path, component, id} = router;
-                return <Route path={path} component={component} key={id || uuid.v1()} />
+                const {fetch, id = uuid.v1(), ...rest} = router;
+                return <Route {...rest} key={id} />
               })
           }
       </Switch>

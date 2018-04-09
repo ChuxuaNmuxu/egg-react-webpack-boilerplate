@@ -1,5 +1,5 @@
-// import Reveal from 'reveal.js';
-let reveal = {}
+import Reveal from 'reveal.js';
+// let reveal = {}
 import {Map, fromJS} from 'immutable';
 import {isString} from 'lodash';
 
@@ -14,7 +14,7 @@ class PadInteractor {
     data; // 课件数据
 
     constructor (data, options = {}) {
-        Reveal = require('reveal.js').default;
+        // Reveal = require('reveal.js').default;
         this.data = Map.isMap(data) ? data : fromJS(data);
         this.options = options;
         this.init();

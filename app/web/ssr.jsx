@@ -13,6 +13,9 @@ import SSR from 'component/spa/ssr/ssr';
 import create from './core/configureStore';
 import routes from 'component/spa/ssr/routers';
 
+// console.log('global: ', global.window)
+// console.log('navigator: ', global.navigator.vendor)
+
 const clientRender = () => {
   const store = create(window.__INITIAL_STATE__);
   const url = store.getState().url;

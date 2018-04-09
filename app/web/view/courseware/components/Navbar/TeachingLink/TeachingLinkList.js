@@ -5,8 +5,8 @@ import {DragDropContext} from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import {flow} from 'lodash';
 import { connect } from 'react-redux';
-// import Reveal from 'reveal.js';
-let reveal = {}
+import Reveal from 'reveal.js';
+// let reveal = {}
 
 import TeachingLinkItem from './TeachingLinkItem';
 import {
@@ -71,9 +71,9 @@ class TeachingLinkList extends React.Component {
         );
     }
 
-    componentDidMount () {
-        Reveal = require('reveal.js').default;
-    }
+    // componentDidMount () {
+    //     Reveal = require('reveal.js').default;
+    // }
 
     render () {
         const {teachingLinks, addTeachingLink, dispatch} = this.props;

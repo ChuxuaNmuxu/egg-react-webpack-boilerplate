@@ -66,7 +66,6 @@ class TitleBtn extends React.Component {
         } = this.props
         const {editTitle} = this.state;
         const onFocus = this.props.onFocus || this.onFocus
-        console.log(53, this.props)
         return (
             <div styleName='courseware-title'>
                 <Form>
