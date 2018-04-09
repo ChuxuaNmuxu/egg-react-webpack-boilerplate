@@ -22,15 +22,8 @@ const NotFound = () => {
 const routes = [
   {
     path: '/',
-    component: Hamster
-    // fetch: () => Promise.resolve({
-    //   courseware: {
-    //   }
-    // })
-  },
-  {
-    path: '/editor',
-    component: Editor,
+    component: Hamster,
+    exact: true,
     fetch: () => Promise.resolve({
       hamster: {
         blocks: [],
@@ -39,6 +32,14 @@ const routes = [
         }
       }
     })
+  },
+  {
+    path: '/editor/:id',
+    component: Editor,
+    // fetch: () => Promise.resolve({
+    //   courseware: {
+    //   }
+    // })
   },
   {
     path: '*',

@@ -1,6 +1,6 @@
 import React from 'react';
-// import Reveal from 'reveal.js';
-let reveal = {}
+import Reveal from 'reveal.js';
+// let reveal = {}
 import CSSModules from 'react-css-modules';
 import domtoimage from 'dom-to-image';
 import { connect } from 'react-redux';
@@ -71,10 +71,10 @@ class PPTEditor extends React.PureComponent { // 入口用pure组件关注整个
         this.preview = this.preview.bind(this);
         this.exitPreview = this.exitPreview.bind(this);
     }
-
+    
     componentDidMount () {
         // import Reveal from 'reveal.js';
-        Reveal = require('reveal.js').default;
+        // Reveal = require('reveal.js').default;
         window.Reveal = Reveal;
         Reveal.initialize({
             minScale: this.state.revealScale,
@@ -92,7 +92,7 @@ class PPTEditor extends React.PureComponent { // 入口用pure组件关注整个
 
         // 把url里的id保存至局部state
         this.setState({
-            courseId: this.props.params.id
+            courseId: this.props.match.params.id
         }, () => {
             // this.props.dispatch(courseEntryActions.getEditCourseData(this.state.courseId)).then(() => {
             //     // 在获取数据之前禁用键盘事件
@@ -396,10 +396,9 @@ class PPTEditor extends React.PureComponent { // 入口用pure组件关注整个
     }
 
     render () {
-        const { courseware, dispatch, past, future, uploadGetParams, params: {id} } = this.props;
+        const { courseware, dispatch, past, future, uploadGetParams, match:{params: {id}} } = this.props;
         const {layoutChange: {rightBar, leftBar, toolbar, header}, preview, loading} = this.state;
         const isCrop = courseware.getIn(['current', 'isCrop']);
-        console.log('courseware', courseware.toJS());
         const noStyle = {
             display: 'none'
         };

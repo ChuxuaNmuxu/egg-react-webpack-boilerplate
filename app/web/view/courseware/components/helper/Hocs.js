@@ -1,5 +1,5 @@
-// import Reveal from 'reveal.js';
-let reveal = {}
+import Reveal from 'reveal.js';
+// let reveal = {}
 
 /**
  * 播放和编辑页面相同的操作
@@ -8,7 +8,7 @@ let reveal = {}
 const commonHandlesHoc = config => wrapperComponent =>
     class commonComponent extends wrapperComponent {
         componentDidMount () {
-            Reveal = require('reveal.js').default;
+            // Reveal = require('reveal.js').default;
             super.componentDidMount();
             // 滚轮事件
             const revealDom = document.querySelector('.reveal');

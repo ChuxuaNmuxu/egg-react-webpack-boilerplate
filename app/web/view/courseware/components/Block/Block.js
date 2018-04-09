@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import domtoimage from 'dom-to-image';
 // import elementResizeEvent from 'element-resize-event';
 import {Map} from 'immutable';
-// import Reveal from 'reveal.js';
+import Reveal from 'reveal.js';
 let reveal = {}
 
 
@@ -86,7 +86,7 @@ class Block extends React.Component {
     }
 
     componentDidMount () {
-        Reveal = require('reveal.js').default;
+        // Reveal = require('reveal.js').default;
         if (saveQuestionHTML) return;
         const {me, courseware} = this.props;
         if (me.get('type') === 'group') {

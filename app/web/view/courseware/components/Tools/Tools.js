@@ -1,8 +1,8 @@
 import React from 'react';
 // import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-// import Reveal from 'reveal.js';
-let reveal = {}
+import Reveal from 'reveal.js';
+// let reveal = {}
 import { Icon } from 'antd';
 import CSSModules from 'react-css-modules';
 import styles from './tools.scss';
@@ -27,9 +27,9 @@ class PPTTools extends React.PureComponent {
         })
     }
 
-    componentDidMount () {
-        Reveal = require('reveal.js').default;
-    }
+    // componentDidMount () {
+    //     Reveal = require('reveal.js').default;
+    // }
 
     render () {
         const {

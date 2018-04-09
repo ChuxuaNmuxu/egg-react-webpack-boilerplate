@@ -17,5 +17,10 @@ module.exports = app => {
       await ctx.render('ssr.js', { url: ctx.url});
     }
 
+    async editor() {
+      const { ctx } = this;
+      await ctx.render('ssr.js', { url: ctx.url});
+    }
+
   };
 };

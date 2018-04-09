@@ -6,8 +6,8 @@ import { DragSource, DropTarget } from 'react-dnd';
 import {flow} from 'lodash';
 import {Menu, Card} from 'antd';
 import { connect } from 'react-redux';
-// import Reveal from 'reveal.js';
-let reveal = {}
+import Reveal from 'reveal.js';
+// let reveal = {}
 import nzhcn from 'nzh/cn';
 import {Map} from 'immutable'
 
@@ -194,9 +194,9 @@ class TeachingLinkItem extends React.Component {
         document.querySelector('.headerInput').select();
     }
 
-    componentDidMount () {
-        Reveal = require('reveal.js').default;
-    }
+    // componentDidMount () {
+    //     Reveal = require('reveal.js').default;
+    // }
 
     render () {
         const { isDragging, connectDragSource, connectDropTarget } = this.props;

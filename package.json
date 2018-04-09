@@ -69,6 +69,7 @@
     "immutable": "^3.8.2",
     "ip": "^1.1.5",
     "js-cookie": "^2.2.0",
+    "jsdom": "^11.7.0",
     "nzh": "^1.0.3",
     "raw-loader": "^0.5.1",
     "react-color": "^2.14.0",

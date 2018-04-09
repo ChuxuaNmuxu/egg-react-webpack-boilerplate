@@ -6,8 +6,8 @@ import { DragSource, DropTarget } from 'react-dnd';
 import {flow} from 'lodash';
 import { connect } from 'react-redux';
 import {Menu} from 'antd';
-// import Reveal from 'reveal.js';
-let Reveal = {};
+import Reveal from 'reveal.js';
+// let reveal = {};
 
 import {onContextMenu, hideContextMenu} from '../../../../../components/ContextMenu';
 import {
@@ -166,9 +166,9 @@ class SlideItem extends React.Component {
         }
     }
 
-    componentDidMount () {
-        Reveal = require('reveal.js').default;
-    }
+    // componentDidMount () {
+    //     Reveal = require('reveal.js').default;
+    // }
 
     render () {
         const { isDragging, connectDragSource, connectDropTarget } = this.props;

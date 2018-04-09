@@ -1,8 +1,8 @@
 import React from 'react';
 import {List, Map} from 'immutable';
 import PropTypes from 'prop-types';
-// import Reveal from 'reveal.js';
-let reveal = {}
+import Reveal from 'reveal.js';
+// let reveal = {}
 
 import utils from '../../../../utils/utils';
 import Snap from '../Snap';
@@ -41,7 +41,7 @@ class Viewport extends React.Component {
     }
 
     componentDidMount () {
-        Reveal = require('reveal.js').default;
+        // Reveal = require('reveal.js').default;
         document.addEventListener('mouseup', this.handleMouseUp);
     }
 
